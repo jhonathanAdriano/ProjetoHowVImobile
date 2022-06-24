@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "628499014671",
+    "project_id": "projetohowvi",
+    "storage_bucket": "projetohowvi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:628499014671:android:7a316dfa6c1fe7483c2f7a",
+        "android_client_info": {
+          "package_name": "com.example.projetohowvi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "628499014671-ihm30oe6rr2a27mhd1tcr2d35aeb0iru.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDu700Pjfr9EOgGURaZSgSzsyPnQ7CaCEs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "628499014671-ihm30oe6rr2a27mhd1tcr2d35aeb0iru.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

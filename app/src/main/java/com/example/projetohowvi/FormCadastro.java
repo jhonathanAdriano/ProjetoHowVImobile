@@ -90,7 +90,7 @@ public class FormCadastro extends AppCompatActivity {
                     } catch (FirebaseAuthInvalidCredentialsException e) {
                         erro = "E-mail inválido";
                     } catch (Exception e) {
-                        erro = "Erro ao cadastrar usuário";
+                        erro = "Erro ao cadastrar funcionário";
                     }
 
                     Snackbar snackbar = Snackbar.make(v, erro, Snackbar.LENGTH_SHORT);

@@ -21,7 +21,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 public class FormLogin extends AppCompatActivity {
-
+    //variáveis
     private TextView text_tela_cadastro;
     private EditText edit_email,edit_senha;
     private Button bt_entrar;
@@ -47,7 +47,7 @@ public class FormLogin extends AppCompatActivity {
         bt_entrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+            //mensagem de aviso para usuário
                 String email = edit_email.getText().toString();
                 String senha = edit_senha.getText().toString();
 
@@ -83,7 +83,7 @@ public class FormLogin extends AppCompatActivity {
                   },3000);
               }else{
                   String erro;
-
+                //mensagem de erro para usuáro
                   try {
                       throw task.getException();
                   }catch (Exception e){
@@ -109,13 +109,13 @@ public class FormLogin extends AppCompatActivity {
         }
 
     }
-
+    //torna tela login como principal
     private void TelaPrincipal(){
         Intent intent = new Intent(FormLogin.this,TelaPrincipal.class);
         startActivity(intent);
         finish();
     }
-
+    //inicia os componentes
      private void IniciarComponentes(){
          text_tela_cadastro = findViewById(R.id.text_tela_cadastro);
          edit_email = findViewById(R.id.edit_email);

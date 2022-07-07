@@ -18,8 +18,8 @@ import com.google.firebase.firestore.FirebaseFirestoreException;
 
 public class TelaPrincipal extends AppCompatActivity {
 
+    private Button bt_ponto;
     private TextView nomeUsuario,emailUsuario;
-    private Button bt_deslogar;
     FirebaseFirestore db = FirebaseFirestore.getInstance();
     String usuarioID;
 
@@ -31,15 +31,12 @@ public class TelaPrincipal extends AppCompatActivity {
         getSupportActionBar().hide();
         IniciarComponentes();
 
-        bt_deslogar.setOnClickListener(new View.OnClickListener() {
+        bt_ponto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-           //cria evento de clique no botão deslogar
 
-                FirebaseAuth.getInstance().signOut();
-                Intent intent = new Intent(TelaPrincipal.this,FormLogin.class);
+                Intent intent = new Intent(TelaPrincipal.this, FormPonto.class);
                 startActivity(intent);
-                finish();
             }
         });
     }
@@ -66,6 +63,6 @@ public class TelaPrincipal extends AppCompatActivity {
     private void IniciarComponentes(){
         nomeUsuario = findViewById(R.id.textNomeUsuario);
         emailUsuario = findViewById(R.id.textEmailUsuario);
-        bt_deslogar = findViewById(R.id.bt_deslogar);
+        bt_ponto = findViewById(R.id.bt_ponto);
     }
 }

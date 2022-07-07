@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">Projeto HowVI</string>
-    <string name="entrar">Registrar Ponto</string>
+    <string name="entrar">ENTRAR</string>
     <string name="text_cadastro">Não possui perfil?\nCrie seu perfil clicando aqui!</string>
     <string name="title_cadastro">Crie seu perfil</string>
+    <string name="title_ponto">Ponto Registrado!</string>
+    <string name="registrar_ponto">REGISTRAR PONTO</string>
+    <string name="deslogar">DESLOGAR</string>
 </resources>
